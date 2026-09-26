@@ -108,6 +108,13 @@ footer a:hover{color:#fff}
 .cgrid{align-items:center;grid-template-columns:1fr minmax(0,460px)}
 .price{font-family:Sora,"Noto Sans Tamil",sans-serif;font-size:1.5rem;font-weight:800;color:var(--head)}
 .card.pkg .btn{margin-top:auto}
+.port{display:grid;gap:18px;grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
+.pcard{background:var(--card);border:1px solid var(--line);border-radius:14px;overflow:hidden;display:flex;flex-direction:column}
+.pshot{height:150px;background:linear-gradient(135deg,var(--navy),var(--blue));display:flex;align-items:center;justify-content:center;color:#fff;font-family:Sora,sans-serif;font-weight:700;font-size:.95rem;text-align:center;padding:14px}
+.pbody{padding:18px;display:flex;flex-direction:column;gap:6px;flex:1}
+.ptag{display:inline-block;font-size:.75rem;font-weight:700;color:var(--blue);background:var(--sky);padding:4px 10px;border-radius:999px;align-self:flex-start}
+.pcard h3{font-size:1.05rem}
+.pcard p{margin:0;color:var(--muted);font-size:.92rem}
 </style>
 </head>
 <body>
@@ -116,6 +123,7 @@ footer a:hover{color:#fff}
 <nav class="links" aria-label="Main">
 <a href="#services" data-ta="சேவைகள்">Services</a>
 <a href="#process" data-ta="செயல்முறை">Process</a>
+<a href="#portfolio" data-ta="பணிகள்">Work</a>
 <a href="#about" data-ta="எங்களைப் பற்றி">About</a>
 <a href="#quote" data-ta="விலை">Pricing</a>
 </nav>
@@ -162,6 +170,16 @@ footer a:hover{color:#fff}
 </div>
 </div></section>
 
+<section id="portfolio"><div class="wrap">
+<h2 data-ta="எங்கள் பணிகள்">Our work</h2>
+<p class="lead" data-ta="நாங்கள் உருவாக்கிய சில திட்டங்கள்.">A few projects we have built.</p>
+<div class="port">
+<div class="pcard"><div class="pshot">IMR Groups CRM</div><div class="pbody"><span class="ptag" data-ta="CRM">CRM</span><h3 data-ta="IMR Groups — Leads CRM">IMR Groups — Leads CRM</h3><p data-ta="லீட்ஸ், சைட் விசிட்கள், புக்கிங்குகளை நிர்வகிக்கும் CRM ஆப்.">A CRM to manage leads, site visits and bookings in one place.</p></div></div>
+<div class="pcard"><div class="pshot">MK Zora Staff App</div><div class="pbody"><span class="ptag" data-ta="பிசினஸ் ஆப்">Business app</span><h3 data-ta="MK Zora — Staff Work App">MK Zora — Staff Work App</h3><p data-ta="வேலை ஒதுக்கீடு, முன்னேற்றம், நோட்டிஃபிகேஷன்களைக் கண்காணிக்கும் ஆப்.">An app to assign staff work and track progress with notifications.</p></div></div>
+<div class="pcard"><div class="pshot">Varam Housing</div><div class="pbody"><span class="ptag" data-ta="வெப்சைட்">Website</span><h3 data-ta="Varam Housing and Properties">Varam Housing and Properties</h3><p data-ta="ரியல் எஸ்டேட் தொழிலுக்கான வெப்சைட் மற்றும் பிராஜெக்ட் பிரோஷர்.">A website and project brochure for a real-estate business.</p></div></div>
+<div class="pcard"><div class="pshot">SRINUMA Branding</div><div class="pbody"><span class="ptag" data-ta="பிராண்டிங்">Branding</span><h3 data-ta="SRINUMA — Brand identity">SRINUMA — Brand identity</h3><p data-ta="முழு லோகோ கிட் மற்றும் இந்த வெப்சைட்.">A full logo kit and this website, built for our own brand.</p></div></div>
+</div>
+</div></section>
 <section id="about"><div class="wrap about">
 <div>
 <h2 data-ta="எங்களைப் பற்றி">About us</h2>
