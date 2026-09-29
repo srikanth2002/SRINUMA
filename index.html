@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<script>document.documentElement.classList.add('has-js')</script>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Srinuma Digital Solutions | Websites, Apps and Branding</title>
@@ -130,10 +131,12 @@ footer a:hover{color:#fff}
 .pcard:hover .ptag{background:var(--blue);color:#fff;transform:translateY(-2px)}
 @media (prefers-reduced-motion:reduce){.pshot,.pshot::after{animation:none}.pcard{transition:none}.pcard:hover{transform:none}}
 
-.reveal{opacity:0;transform:translateY(28px);transition:opacity .7s cubic-bezier(.2,.7,.2,1),transform .7s cubic-bezier(.2,.7,.2,1)}
+.has-js .reveal{opacity:0;transform:translateY(28px)}
+.reveal{transition:opacity .7s cubic-bezier(.2,.7,.2,1),transform .7s cubic-bezier(.2,.7,.2,1)}
 .reveal.in{opacity:1;transform:translateY(0)}
 .reveal-stagger.in .r-item{opacity:1;transform:translateY(0)}
-.r-item{opacity:0;transform:translateY(22px);transition:opacity .6s ease,transform .6s ease}
+.has-js .r-item{opacity:0;transform:translateY(22px)}
+.r-item{transition:opacity .6s ease,transform .6s ease}
 .r-item:nth-child(1){transition-delay:.05s}.r-item:nth-child(2){transition-delay:.12s}.r-item:nth-child(3){transition-delay:.19s}
 .r-item:nth-child(4){transition-delay:.26s}.r-item:nth-child(5){transition-delay:.33s}.r-item:nth-child(6){transition-delay:.4s}
 
@@ -356,15 +359,21 @@ window.location.href='mailto:srinumadigitalsolutions@gmail.com?subject='+encodeU
 
 <script>
 (function(){
+try{
 var els=document.querySelectorAll('.reveal,.reveal-stagger');
+function revealAll(){els.forEach(function(e){e.classList.add('in')})}
 if('IntersectionObserver' in window){
 var io=new IntersectionObserver(function(entries){
 entries.forEach(function(en){if(en.isIntersecting){en.target.classList.add('in');io.unobserve(en.target)}});
-},{threshold:.15});
+},{threshold:.1,rootMargin:'0px 0px -10% 0px'});
 els.forEach(function(e){io.observe(e)});
-}else{els.forEach(function(e){e.classList.add('in')})}
+setTimeout(revealAll,1500);
+}else{revealAll()}
 var hd=document.querySelector('header');
-window.addEventListener('scroll',function(){hd.classList.toggle('scrolled',window.scrollY>10)},{passive:true});
+if(hd){window.addEventListener('scroll',function(){hd.classList.toggle('scrolled',window.scrollY>10)},{passive:true})}
+}catch(err){
+document.documentElement.classList.remove('has-js');
+}
 })();
 </script>
 </body>
