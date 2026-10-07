@@ -1,0 +1,90 @@
+export const PHONE = '918148902247'
+export const EMAIL = 'srinumadigitalsolutions@gmail.com'
+
+// price: starting price in rupees, null = priced after a quick chat
+export const ITEMS = [
+  { id: 'web', price: 5999 },
+  { id: 'crm', price: 19999 },
+  { id: 'inv', price: 799 },
+]
+
+export const T = {
+  en: {
+    heroA: 'Tell us what you need.',
+    heroB: 'See the price as you go.',
+    heroSub: 'Tap the services you want. Your estimate builds up on the paper, ready to send on WhatsApp.',
+    nav: ['Services', 'Portfolio', 'About'],
+    pickHead: 'Pick what you need',
+    items: {
+      web: ['Website', 'Fast, mobile-friendly site with enquiry form and WhatsApp contact.'],
+      crm: ['Basic CRM', 'Leads, customers, work and billing in one place.'],
+      inv: ['Wedding invitation', 'A digital invitation to share on WhatsApp.'],
+    },
+    from: 'from',
+    onRequest: 'on request',
+    workHead: 'Portfolio',
+    work: [
+      ['Real estate CRM', 'Leads, site visits and bookings, with staff logins.', 2],
+      ['Event management website', 'A wedding-focused site with WhatsApp contact.', 1],
+      ['Work-assignment app', 'Owner assigns tasks to staff and tracks progress.', 2],
+      ['Wedding invitations', 'Digital invitations to share on WhatsApp.', 3],
+    ],
+    aboutHead: 'About us',
+    about: [
+      'SRINUMA Digital Solutions helps small and growing businesses get online and work smarter.',
+      'You talk directly to the person building your project, in Tamil or English.',
+    ],
+    receipt: 'Estimate',
+    forWho: 'For',
+    name: 'Your name',
+    phone: 'Phone number',
+    empty: 'Nothing added yet. Tap a service.',
+    total: 'Starting total',
+    quoteNote: 'Items marked on request are priced after we talk.',
+    stamp: 'Starting prices',
+    send: 'Send on WhatsApp',
+    need: 'Pick a service and add your name.',
+    show: 'Show estimate',
+    items_n: 'items',
+    rights: 'All rights reserved.',
+  },
+  ta: {
+    heroA: 'உங்களுக்கு என்ன வேண்டும் என்று சொல்லுங்கள்.',
+    heroB: 'விலையை உடனே பாருங்கள்.',
+    heroSub: 'தேவையான சேவைகளைத் தொடுங்கள். உங்கள் மதிப்பீடு காகிதத்தில் உருவாகும், வாட்ஸ்அப்பில் அனுப்பலாம்.',
+    nav: ['சேவைகள்', 'போர்ட்ஃபோலியோ', 'எங்களை பற்றி'],
+    pickHead: 'தேவையானதைத் தேர்ந்தெடுங்கள்',
+    items: {
+      web: ['வெப்சைட்', 'மொபைலில் வேகமாக திறக்கும் தளம், விசாரணை படிவம், வாட்ஸ்அப் தொடர்புடன்.'],
+      crm: ['அடிப்படை CRM', 'லீட்ஸ், வாடிக்கையாளர்கள், வேலை, பில்லிங் ஒரே இடத்தில்.'],
+      inv: ['திருமண அழைப்பிதழ்', 'வாட்ஸ்அப்பில் பகிரக்கூடிய டிஜிட்டல் அழைப்பிதழ்.'],
+    },
+    from: 'தொடக்கம்',
+    onRequest: 'கேட்டால் சொல்வோம்',
+    workHead: 'போர்ட்ஃபோலியோ',
+    work: [
+      ['ரியல் எஸ்டேட் CRM', 'லீட்ஸ், சைட் விசிட், புக்கிங் மற்றும் ஸ்டாஃப் லாகின்.', 2],
+      ['ஈவென்ட் மேனேஜ்மென்ட் வெப்சைட்', 'திருமணத்தை மையமாகக் கொண்ட தளம், வாட்ஸ்அப் தொடர்புடன்.', 1],
+      ['வேலை ஒதுக்கீட்டு செயலி', 'உரிமையாளர் ஊழியர்களுக்கு வேலை ஒதுக்கி முன்னேற்றத்தைப் பார்க்கலாம்.', 2],
+      ['திருமண அழைப்பிதழ்கள்', 'வாட்ஸ்அப்பில் பகிரக்கூடிய டிஜிட்டல் அழைப்பிதழ்கள்.', 3],
+    ],
+    aboutHead: 'எங்களை பற்றி',
+    about: [
+      'SRINUMA Digital Solutions சிறு மற்றும் வளரும் தொழில்கள் ஆன்லைனில் வரவும், எளிதாக வேலை செய்யவும் உதவுகிறது.',
+      'உங்கள் ப்ராஜெக்ட்டை உருவாக்குபவரிடமே தமிழிலோ ஆங்கிலத்திலோ நேரடியாகப் பேசலாம்.',
+    ],
+    receipt: 'மதிப்பீடு',
+    forWho: 'யாருக்கு',
+    name: 'உங்கள் பெயர்',
+    phone: 'தொலைபேசி எண்',
+    empty: 'இன்னும் எதுவும் சேர்க்கவில்லை. ஒரு சேவையைத் தொடுங்கள்.',
+    total: 'தொடக்க மொத்தம்',
+    quoteNote: 'கேட்டால் சொல்வோம் என்றவை பேசிய பின் விலை நிர்ணயிக்கப்படும்.',
+    stamp: 'தொடக்க விலைகள்',
+    send: 'வாட்ஸ்அப்பில் அனுப்பு',
+    need: 'ஒரு சேவையைத் தேர்ந்து உங்கள் பெயரை உள்ளிடவும்.',
+    show: 'மதிப்பீட்டைக் காட்டு',
+    items_n: 'சேவைகள்',
+    rights: 'அனைத்து உரிமைகளும் பாதுகாக்கப்பட்டவை.',
+  },
+}
